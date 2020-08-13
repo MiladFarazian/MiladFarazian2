@@ -1,0 +1,318 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #ebf7f7;
+}
+
+body {
+  position: relative;
+  background-color: #ebf7f7;
+  color: black;
+  font-size: 1vw;
+  /*font-family: "Pacifico", cursive;*/
+}
+
+div {
+  padding: 0px;
+  margin: 0px;
+}
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+.pad-top {
+  padding-top: 70px;
+}
+
+.no-padding {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.adj-height {
+  height: 2000px;
+}
+
+.row_flex {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column_flex {
+  -ms-flex: 33.3%; /* IE10 */
+  flex: 33.3%;
+  max-width: 33.3%;
+  padding: 0 4px;
+}
+
+.column_flex .photo {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.column_flex video {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.margin_name {
+  font-size: 2vw;
+  color: navy;
+}
+
+.margin_text {
+  margin: 30% 0% 30% 60%;
+  font-weight: 900px;
+  font-size: 2vw;
+}
+
+.margin_text p {
+  font-size: 1vw;
+}
+
+.photo {
+  margin: 0% 25%;
+}
+
+#header {
+  font-size: 20px;
+  transition: 0.2s;
+}
+
+.cursive {
+  font-family: "Times New Roman", Times, serif, cursive;
+  font-style: italic;
+  font-stretch: extra-expanded;
+  font-size: large;
+}
+
+.caption {
+  border-radius: 5px;
+  font-size: 36px;
+}
+
+.caption_ {
+  margin: 0% 38%;
+  background-color: #ebd9c6;
+  font-size: 1vw;
+}
+
+.category-title {
+  text-align: center;
+}
+
+.category-title:before {
+  content: "—";
+}
+.category-title:after {
+  content: "—";
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+.logo {
+  max-width: 3%;
+  height: auto;
+  margin: 0px 1px;
+}
+
+/*.nav-link {
+  font-size: 1vw;
+}
+*/
+.loader_ {
+  position: fixed;
+  z-index: 1031;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/clouds.gif");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader_ > img {
+  width: 100px;
+}
+
+button {
+  display: inline-block;
+  border-radius: 50%;
+  background-color: #ebf7f7;
+  border: navy;
+  color: #ebf7f7;
+  text-align: center;
+  font-size: 1vw;
+  padding: 5px;
+  width: 100px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-top: 5px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.button:active {
+  background-color: #8facac;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.map {
+  padding-left: 1vw;
+  padding-bottom: 30px;
+}
+
+.sub-titles {
+  color: white;
+  font-size: 3vw;
+  padding: 20px 0px 0px 0px;
+  text-align: center;
+}
+
+.sub-body {
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+#landing {
+  padding-top: 1%;
+}
+
+#intro-text {
+  z-index: 900;
+}
+
+#intro-photo {
+  z-index: 800;
+}
+
+@media screen and (max-width: 910px) {
+  .button {
+    font-size: 1.4vw;
+    width: 100%;
+    margin-right: 3px;
+    margin-left: 3px;
+  }
+  .nav-link {
+    font-size: 1.4vw;
+    transition: font-size 2s;
+  }
+  .margin_text {
+    margin: 30% 0% 30% 35%;
+    /*transition: margin 3s;*/
+  }
+  .margin_name {
+    font-size: 3vw;
+    /*transition: font-size 2s;*/
+  }
+  .margin_text p {
+    font-size: 1.5vw;
+    /*transition: font-size 2s;*/
+  }
+  #extra_column {
+    width: 50px;
+    /*transition: width 2s;*/
+  }
+  .body {
+    background-color: blueviolet;
+    transition: background-color 2s;
+  }
+  #landing {
+    padding-top: 4%;
+    transition: padding-top 1s;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .button {
+    font-size: 1.75vw;
+    width: 100%;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  .nav-link {
+    font-size: 1.75vw;
+    transition: font-size 2s;
+  }
+  .margin_text {
+    margin: 30% 0% 30% 30%;
+    transition: margin 3s;
+  }
+  .margin_name {
+    font-size: 4vw;
+    /*transition: font-size 2s;*/
+  }
+  .margin_text p {
+    font-size: 2vw;
+    /*transition: font-size 2s;*/
+  }
+  #extra_column {
+    width: 10px;
+    /*transition: width 2s;*/
+  }
+  #landing {
+    padding-top: 10%;
+  }
+}
