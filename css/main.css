@@ -31,7 +31,7 @@ div {
 }
 
 .pad-top {
-  padding-top: 70px;
+  padding-top: 10vh;
 }
 
 .no-padding {
@@ -245,12 +245,24 @@ button {
   padding-top: 1%;
 }
 
-#intro-text {
-  z-index: 900;
+#rocket {
+  max-width: 8%;
+  height: auto;
 }
 
-#intro-photo {
-  z-index: 800;
+#check {
+  max-width: 8%;
+  height: auto;
+}
+
+#paper {
+  max-width: 6%;
+  height: auto;
+}
+
+#bob {
+  max-width: 6%;
+  height: auto;
 }
 
 @media screen and (max-width: 910px) {

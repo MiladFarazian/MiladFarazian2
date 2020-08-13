@@ -1,5 +1,6 @@
 <!--meta http-equiv="refresh" content="2; url = ./home.html" />
 <!DOCTYPE html>
+#INCLUDE markdown.formatted.file
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -68,7 +69,7 @@
               Projects
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="/.home.html">1</a>
+              <a class="dropdown-item" href="#projects">Project Home</a>
             </div>
           </li>
         </ul>
@@ -108,21 +109,25 @@
       class="container-fluid no-padding"
       style="background-color: navy;"
     >
+      
       <div id="mission" class="sub-titles">
-        <h1>Mission</h1>
+        <div class="pad-top"></div>
+        <h1>Mission<img id="rocket" src="images/mission.gif"></h1>
       </div>
-      <div class="adj-height"></div>
       <div id="experience"class="sub-titles">
-        <h1>Experience</h1>
+        <div class="pad-top"></div>
+        <h1>Experience<img id="check" src="images/experience.gif"></h1>
+        <embedmd src="experience.md"></embedmd>
         <div id="resume" >
-            <h3>Resume</h3>
+            <div class="pad-top"></div>
+            <h3>Resume<img id="paper" src="images/resume.gif"></h3>
         </div>
       </div>
-      <div class="adj-height"></div>
       <div id="projects" class="sub-titles">
-        <h1>Projects</h1>
+        <div class="pad-top"></div>
+        <h1 id="one">Projects <img id="bob" src="images/projects.gif"></h1>
       </div>
-
+      <div class="adj-height"></div>
       <div class="map">
         <iframe
           width="400"
