@@ -265,6 +265,19 @@ button {
   height: auto;
 }
 
+p {
+  font-size: 1vw;
+}
+
+ul {
+  font-size: 1vw;
+}
+
+.social {
+  padding-right: 109px;
+  color: navy;
+}
+
 @media screen and (max-width: 910px) {
   .button {
     font-size: 1.4vw;
