@@ -272,9 +272,13 @@ p {
 ul {
   font-size: 1vw;
 }
+.social-row {
+  vertical-align: middle;
+}
 
 .social {
-  padding-right: 109px;
+  width: 2vw;
+  height: auto;
   color: navy;
 }
 
