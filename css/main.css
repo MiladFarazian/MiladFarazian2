@@ -1,5 +1,4 @@
-html,
-body {
+* {
   padding: 0;
   margin: 0;
 }
@@ -7,6 +6,9 @@ body {
 html {
   scroll-behavior: smooth;
   background-color: #ebf7f7;
+
+  overflow-y: scroll; /* has to be scroll, not auto */
+  -webkit-overflow-scrolling: touch;
 }
 
 body {
@@ -173,6 +175,9 @@ div {
 .loader_ > img {
   width: 100px;
 }
+.button-row {
+  padding-bottom: 0;
+}
 
 button {
   display: inline-block;
@@ -273,13 +278,23 @@ ul {
   font-size: 1vw;
 }
 .social-row {
+  padding-top: 0;
   vertical-align: middle;
 }
 
-.social {
-  width: 2vw;
-  height: auto;
-  color: navy;
+.social-row img {
+  padding-right: 1.2vw;
+  width: 3.6vw;
+}
+
+.social-row img:hover {
+  width: 4.5vw;
+  transition: width 0.5s ease-in-out;
+}
+
+.social-row img:hover::after {
+  width: 5vw;
+  transition: width 0.5s ease-out;
 }
 
 @media screen and (max-width: 910px) {
@@ -295,7 +310,7 @@ ul {
   }
   .margin_text {
     margin: 30% 0% 30% 35%;
-    /*transition: margin 3s;*/
+    /*transition: margin 0.5s ease-out;*/
   }
   .margin_name {
     font-size: 3vw;
@@ -348,5 +363,17 @@ ul {
   }
   #landing {
     padding-top: 10%;
+  }
+  .map {
+    width: 50%;
+    height: auto;
+  }
+  .social-row img {
+    padding-right: 2vw;
+    width: 7vw;
+  }
+  .social-row img:hover {
+    width: 8.5vw;
+    transition: width 0.5s ease-in-out;
   }
 }
