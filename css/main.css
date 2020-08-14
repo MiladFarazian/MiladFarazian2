@@ -3,6 +3,12 @@
   margin: 0;
 }
 
+html,
+body {
+  width: auto !important;
+  overflow-x: hidden !important;
+}
+
 html {
   scroll-behavior: smooth;
   background-color: #ebf7f7;
