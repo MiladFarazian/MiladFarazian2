@@ -9,6 +9,10 @@ body {
   overflow-x: hidden !important;
 }
 
+#page {
+  display: none;
+}
+
 html {
   scroll-behavior: smooth;
   background-color: #ebf7f7;
@@ -179,7 +183,7 @@ div {
 }
 
 .loader_ > img {
-  width: 100px;
+  width: 200px;
 }
 .button-row {
   padding-bottom: 0;
@@ -298,9 +302,10 @@ ul {
   transition: width 0.5s ease-in-out;
 }
 
-.social-row img:hover::after {
+.social-row img:hover:after,
+.social-row img:after {
   width: 5vw;
-  transition: width 0.5s ease-out;
+  transition: width 5s ease-out;
 }
 
 @media screen and (max-width: 910px) {
