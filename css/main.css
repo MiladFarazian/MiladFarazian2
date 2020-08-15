@@ -6,7 +6,6 @@
 html,
 body {
   width: auto !important;
-  overflow-x: hidden !important;
 }
 
 #page {
@@ -16,8 +15,8 @@ body {
 html {
   scroll-behavior: smooth;
   background-color: #ebf7f7;
-
-  overflow-y: scroll; /* has to be scroll, not auto */
+  overflow-y: scroll;
+  /* has to be scroll, not auto */
   -webkit-overflow-scrolling: touch;
 }
 
@@ -27,11 +26,6 @@ body {
   color: black;
   font-size: 1vw;
   /*font-family: "Pacifico", cursive;*/
-}
-
-div {
-  padding: 0px;
-  margin: 0px;
 }
 
 .fixed-top {
@@ -56,17 +50,22 @@ div {
 }
 
 .row_flex {
-  display: -ms-flexbox; /* IE10 */
+  display: -ms-flexbox;
+  /* IE10 */
+  display: -webkit-box;
   display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
+  -ms-flex-wrap: wrap;
+  /* IE10 */
   flex-wrap: wrap;
   padding: 0 4px;
 }
 
 /* Create four equal columns that sits next to each other */
 .column_flex {
-  -ms-flex: 33.3%; /* IE10 */
-  flex: 33.3%;
+  -ms-flex: 33.3%;
+  /* IE10 */
+  -webkit-box-flex: 33.3%;
+          flex: 33.3%;
   max-width: 33.3%;
   padding: 0 4px;
 }
@@ -107,54 +106,8 @@ div {
 
 #header {
   font-size: 20px;
+  -webkit-transition: 0.2s;
   transition: 0.2s;
-}
-
-.cursive {
-  font-family: "Times New Roman", Times, serif, cursive;
-  font-style: italic;
-  font-stretch: extra-expanded;
-  font-size: large;
-}
-
-.caption {
-  border-radius: 5px;
-  font-size: 36px;
-}
-
-.caption_ {
-  margin: 0% 38%;
-  background-color: #ebd9c6;
-  font-size: 1vw;
-}
-
-.category-title {
-  text-align: center;
-}
-
-.category-title:before {
-  content: "—";
-}
-.category-title:after {
-  content: "—";
-}
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-  .column {
-    -ms-flex: 50%;
-    flex: 50%;
-    max-width: 50%;
-  }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    -ms-flex: 100%;
-    flex: 100%;
-    max-width: 100%;
-  }
 }
 
 .logo {
@@ -163,10 +116,11 @@ div {
   margin: 0px 1px;
 }
 
-/*.nav-link {
+.nav-link {
   font-size: 1vw;
+  vertical-align: middle;
 }
-*/
+
 .loader_ {
   position: fixed;
   z-index: 1031;
@@ -177,16 +131,19 @@ div {
   background-image: url("../images/clouds.gif");
   background-position: center;
   background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .loader_ > img {
   width: 200px;
-}
-.button-row {
-  padding-bottom: 0;
 }
 
 button {
@@ -199,16 +156,20 @@ button {
   font-size: 1vw;
   padding: 5px;
   width: 100px;
+  -webkit-transition: all 0.5s;
   transition: all 0.5s;
   cursor: pointer;
   margin-top: 5px;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-right: 10px;
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .button span {
   cursor: pointer;
   display: inline-block;
   position: relative;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
@@ -218,6 +179,7 @@ button {
   opacity: 0;
   top: 0;
   right: -20px;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
@@ -229,10 +191,13 @@ button {
   opacity: 1;
   right: 0;
 }
+
 .button:active {
   background-color: #8facac;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
+  -webkit-box-shadow: 0 5px #666;
+          box-shadow: 0 5px #666;
+  -webkit-transform: translateY(4px);
+          transform: translateY(4px);
 }
 
 .map {
@@ -275,18 +240,11 @@ button {
   height: auto;
 }
 
-#bob {
+#sign {
   max-width: 6%;
   height: auto;
 }
 
-p {
-  font-size: 1vw;
-}
-
-ul {
-  font-size: 1vw;
-}
 .social-row {
   padding-top: 0;
   vertical-align: middle;
@@ -299,24 +257,35 @@ ul {
 
 .social-row img:hover {
   width: 4.5vw;
+  -webkit-transition: width 0.5s ease-in-out;
   transition: width 0.5s ease-in-out;
 }
 
 .social-row img:hover:after,
 .social-row img:after {
   width: 5vw;
+  -webkit-transition: width 5s ease-out;
   transition: width 5s ease-out;
 }
 
+.button-row button {
+  margin-right: 25px;
+}
+
 @media screen and (max-width: 910px) {
+  .column {
+    -ms-flex: 50%;
+    -webkit-box-flex: 50%;
+            flex: 50%;
+    max-width: 50%;
+  }
   .button {
     font-size: 1.4vw;
-    width: 100%;
-    margin-right: 3px;
-    margin-left: 3px;
+    width: 80px;
   }
   .nav-link {
     font-size: 1.4vw;
+    -webkit-transition: font-size 2s;
     transition: font-size 2s;
   }
   .margin_text {
@@ -337,28 +306,38 @@ ul {
   }
   .body {
     background-color: blueviolet;
+    -webkit-transition: background-color 2s;
     transition: background-color 2s;
   }
   #landing {
     padding-top: 4%;
+    -webkit-transition: padding-top 1s;
     transition: padding-top 1s;
   }
 }
 
 @media screen and (max-width: 620px) {
+  .column {
+    -ms-flex: 100%;
+    -webkit-box-flex: 100%;
+            flex: 100%;
+    max-width: 100%;
+  }
   .button {
     font-size: 1.75vw;
-    width: 100%;
-    margin-right: 0px;
-    margin-left: 0px;
+    width: 60px;
+  }
+  .button-row button {
+    margin-right: 10px;
   }
   .nav-link {
     font-size: 1.75vw;
+    -webkit-transition: font-size 2s;
     transition: font-size 2s;
   }
   .margin_text {
     margin: 30% 0% 30% 30%;
-    transition: margin 3s;
+    /*transition: margin 3s;*/
   }
   .margin_name {
     font-size: 4vw;
@@ -376,8 +355,8 @@ ul {
     padding-top: 10%;
   }
   .map {
-    width: 50%;
-    height: auto;
+    width: 250rem;
+    height: 125rem;
   }
   .social-row img {
     padding-right: 2vw;
@@ -385,6 +364,40 @@ ul {
   }
   .social-row img:hover {
     width: 8.5vw;
+    -webkit-transition: width 0.5s ease-in-out;
     transition: width 0.5s ease-in-out;
   }
 }
+
+#EmotionDetect body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ebf7f7;
+}
+
+#EmotionDetect canvas {
+  position: absolute;
+}
+
+#EmotionDetect video {
+  border-radius: 100px;
+}
+
+#projects img {
+  margin: 1vw 0px;
+  border-radius: 20px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+/*# sourceMappingURL=main.css.map */
