@@ -1,4 +1,4 @@
-#EmotionDetect {
+.EmotionDetect {
   body {
     margin: 0;
     padding: 0;
@@ -9,10 +9,12 @@
     align-items: center;
     background-color: #ebf7f7;
   }
-  canvas {
-    position: absolute;
-  }
+
   video {
     border-radius: 100px;
+  }
+
+  canvas {
+    position: absolute;
   }
 }

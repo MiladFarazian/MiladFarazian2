@@ -139,7 +139,6 @@ button {
   border: navy;
   color: #ebf7f7;
   text-align: center;
-  font-size: 1vw;
   padding: 5px;
   width: 100px;
   transition: all 0.5s;
@@ -150,6 +149,7 @@ button {
 }
 
 .button {
+  font-size: 1vw;
   span {
     cursor: pointer;
     display: inline-block;
@@ -190,6 +190,9 @@ button {
   text-align: center;
   h3 {
     font-size: 2vw;
+  }
+  h4 {
+    font-size: 1vw;
   }
 }
 
@@ -245,6 +248,7 @@ button {
 
 .button-row button {
   margin-right: 25px;
+  margin-bottom: 0px;
 }
 
 @import "./screen";
