@@ -1,4 +1,4 @@
-const video = document.getElementById(".EmotionDetect video");
+const video = document.getElementById("video");
 
 Promise.all([
   faceapi.nets.tinyFaceDetector.loadFromUri("/models"),
