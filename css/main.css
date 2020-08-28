@@ -280,6 +280,10 @@ button {
   margin-bottom: 0px;
 }
 
+.w3-container p {
+  font-size: 1vw;
+}
+
 @media screen and (max-width: 910px) {
   .column {
     -ms-flex: 50%;
@@ -321,6 +325,9 @@ button {
     padding-top: 4%;
     -webkit-transition: padding-top 1s;
     transition: padding-top 1s;
+  }
+  .w3-container p {
+    font-size: 1.7vw;
   }
 }
 
@@ -374,6 +381,9 @@ button {
     width: 8.5vw;
     -webkit-transition: width 0.5s ease-in-out;
     transition: width 0.5s ease-in-out;
+  }
+  .w3-container p {
+    font-size: 2.5vw;
   }
 }
 
