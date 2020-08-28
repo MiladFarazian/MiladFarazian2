@@ -36,7 +36,8 @@
     padding-top: 4%;
     transition: padding-top 1s;
   }
-  .w3-container p {
+  .w3-container,
+  .sub-titles p {
     font-size: 1.7vw;
   }
 }
@@ -89,7 +90,8 @@
     width: 8.5vw;
     transition: width 0.5s ease-in-out;
   }
-  .w3-container p {
+  .w3-container,
+  .sub-titles p {
     font-size: 2.5vw;
   }
 }

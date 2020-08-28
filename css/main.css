@@ -210,13 +210,17 @@ button {
 
 .sub-titles {
   color: white;
-  font-size: 3vw;
   padding: 20px 0px 0px 0px;
   text-align: center;
 }
 
-.sub-titles h3 {
-  font-size: 2vw;
+.sub-titles h1 {
+  font-size: 3vw;
+}
+
+.sub-titles h3,
+.sub-titles h5 {
+  font-size: 2.5vw;
 }
 
 .sub-titles h4 {
@@ -280,7 +284,8 @@ button {
   margin-bottom: 0px;
 }
 
-.w3-container p {
+.w3-container,
+.sub-titles p {
   font-size: 1vw;
 }
 
@@ -326,7 +331,8 @@ button {
     -webkit-transition: padding-top 1s;
     transition: padding-top 1s;
   }
-  .w3-container p {
+  .w3-container,
+  .sub-titles p {
     font-size: 1.7vw;
   }
 }
@@ -382,7 +388,8 @@ button {
     -webkit-transition: width 0.5s ease-in-out;
     transition: width 0.5s ease-in-out;
   }
-  .w3-container p {
+  .w3-container,
+  .sub-titles p {
     font-size: 2.5vw;
   }
 }
