@@ -25,7 +25,7 @@ body {
   background-color: #ebf7f7;
   color: black;
   font-size: 1vw;
-  /*font-family: "Pacifico", cursive;*/
+  font-family: "Pacifico", cursive;
 }
 
 .fixed-top {
@@ -424,5 +424,11 @@ button {
   border-radius: 20px;
   -ms-flex-line-pack: center;
       align-content: center;
+}
+
+.center_body{
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
 }
 /*# sourceMappingURL=main.css.map */
