@@ -149,7 +149,7 @@ body {
 button {
   display: inline-block;
   border-radius: 50%;
-  background-color: #ebf7f7;
+  background-color: navy;
   border: navy;
   color: #ebf7f7;
   text-align: center;
@@ -193,6 +193,10 @@ button {
 .button:hover span:after {
   opacity: 1;
   right: 0;
+}
+
+.button:hover{
+  background-color:rgba(0, 0, 0, 0.2);
 }
 
 .button:active {
